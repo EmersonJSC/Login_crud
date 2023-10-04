@@ -1,0 +1,12 @@
+body {
+  background-image: url("Art.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.right-side {
+  font-family: "Roboto", sans-serif;
+}
+.box {
+  height: auto;
+  width: 40%;
+}
