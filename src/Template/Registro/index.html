@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <!-- Bulma e custom css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/template/Registro/style.css" />
 
     <!-- Google Fonts' -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,17 +21,20 @@
       <div class="box">
         <h1 class="title is-size-3 has-text-weight-bold has-text-black has-text-centered">Registrar</h1>
         <div class="mt-5'">
-          <label class="label">Login:</label>
-          <input class="input" type="text" placeholder="Ex.: Alice" />
-        </div>
-        <div class="mt-5">
-          <label class="label">Senha:</label>
-          <input class="input" type="password" placeholder="*****" />
-        </div>
-        <div class="mt-2">
-          <label class="label">Repita sua senha:</label>
-          <input class="input" type="password" placeholder="*****" />
-        </div>
+          {{area_dinamica}}
+          <!-- <form>
+            <label class="label">Login:</label>
+            <input class="input" type="text" placeholder="Ex.: Alice" />
+          </div>
+          <div class="mt-5">
+            <label class="label">Senha:</label>
+            <input class="input" type="password" placeholder="*****" />
+          </div>
+          <div class="mt-2">
+            <label class="label">Repita sua senha:</label>
+            <input class="input" type="password" placeholder="*****" />
+          </div>
+        </form> -->
 
         <button class="button is-fullwidth mt-5">Registrar</button>
         <!-- <h3 class="is-size-6 has-text-centered mt-6">Esqueceu sua senha? <a>Clique aqui!</a></h3> -->

@@ -3,9 +3,13 @@ require_once 'src/Core/Core.php';
 require_once 'src/Controller/HomeController.php';
 require_once 'src/Controller/ErroController.php';
 require_once 'src/Controller/LoginController.php';
+require_once 'src/Controller/RegistroController.php';
 
 
+require_once 'src/lib/Database/Connection.php';
 require_once 'src/Model/Login.php';
+
+require_once 'vendor/autoload.php';
 
 $temp = file_get_contents('src/Template/Login/index.html');
 
@@ -18,5 +22,5 @@ ob_end_clean();
 
 $tplPronto = str_replace('{{area_dinamica}}', $saida, $temp);
 
-var_dump($saida);
+// var_dump($saida);
 echo $tplPronto;
